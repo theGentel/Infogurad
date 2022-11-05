@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top mb-5">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+                <img src="~/Content/MyContent/logo/headerlogo.jpg" class="rounded-circle" width="50px" height="50px" radius="50px" />
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="@Url.Action("HTTP","Home")">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="@Url.Action("HTTP","Home")">Http</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="@Url.Action("HTTPS","Home")" tabindex="-1" aria-disabled="true">Https</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="@Url.Action("NetCore","Home")" tabindex="-1" aria-disabled="true">Asp .Net Core</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="@Url.Action("NetMVC","Home")" tabindex="-1" aria-disabled="true">Asp .Net Mvc</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="@Url.Action("Contact","Home")" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="@Url.Action("About","Home")" tabindex="-1" aria-disabled="true">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <div class="footer-area mt-5 bg-dark">
+        <div class="footer-top section-space-y-axis-100 text-black pt-5 rounded-3" data-bg-color="#e5ddcc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget-item">
+                            <div class="footer-logo pb-4">
+                                <a href="index.html">
+                                    <img src="~/Content/MyContent/logo/headerlogo.jpg" class="rounded-circle" width="100px" height="100px" alt="Logo">
+                                </a>
+                            </div>
+                            <p class="short-desc mb-2 text-light">Lorem ipsum dolor sit amet, consectet adipi elit, sed do eius tempor incididun ut labore gthydolore. </p>
+                            <div class="widget-contact-info pb-6">
+                                <ul>
+                                    <li class="text-light">
+                                        <i class="pe-7s-map-marker"></i>
+                                        184 Main Rd E, St Albans VIC 3021,
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="payment-method">
+                                <a href="#">
+                                    <img src="~/Content/MyContent/images/1.png" alt="Payment Method">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 col-md-6 pt-10 pt-lg-0 pt-5">
+                        <h3 class="widget-title mb-5 text-light">Information</h3>
+                        <ul>
+                            <li class="text-light">FAQ</li>
+                            <li class="text-light">Http </li>
+                            <li class="text-light">Https</li>
+                            <li class="text-light">Asp .net Core</li>
+                            <li class="text-light">Asp .net MVC</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 col-md-6 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5 text-light">My Account</h3>
+                            <ul>
+                                <li class="text-light">My Account</li>
+                                <li class="text-light">Sign up </li>
+                                <li class="text-light">Asp .net 6</li>
+                                <li class="text-light">Asp .net 7</li>
+                                <li class="text-light">Accessibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-10 pt-lg-0">
+                        <div class="widget-item">
+                            <h3 class="widget-title mb-5 text-light">Newsletters</h3>
+                            <p class="short-desc text-light">Lorem ipsum dolor sit amet, consectet adipi elit, sed do eius tempor.</p>
+                        </div>
+                        <div class="widget-form-area">
+                            <form class="widget-form" action="#">
+                                <input class="input-field" type="email" autocomplete="off" placeholder="Your Email">
+                                <div class="pt-3">
+                                    <button class="btn btn-custom-size btn-primary btn-secondary-hover rounded-0" id="mc-submit" value="submit">Send Mail</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/bootstrap.js"></script>
